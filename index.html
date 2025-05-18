@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#607d8b">
+  <title>Dammykeys04 | Receipt</title>
+  <link rel="manifest" href="../manifest.json">
+  <link rel="apple-touch-icon" href="#">
+  <link rel="shortcut icon" href="../images/dammykeys04_logo.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" media="all">
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection,print" />
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection,print" />
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+
+<body>
+  <div id="top">
+    <nav class="sidenav-trigger1  white" role="navigation">
+      <div class="nav-wrapper">
+        <a href="#" id="logo-container" href="#" class="brand-logo">
+          <h5 id="logo">Calculator</h5>
+        </a>
+
+        <ul class="right hide-on-med-and-down">
+          <li><a href="./src/advanced.html" class="logout"><i class="material-icons left">person</i>Advanced</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="./src/advanced.html" class="logout"><i class="material-icons left">person</i>Advanced</a></li>
+        </ul>
+
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+
+
+    <form class="container center row" id="invoiceForm" action="#">
+      <div>
+        <h1>Battery</h1>
+        <div id="battInput">
+          <div>
+            <div class="col s3">Volts (v)</div>
+            <div class="col s4 offset-s1">Amps (AH)</div>
+            <div class="col s3 offset-s1" id="battQuantity">Qty</div>
+          </div>
+          <div id="div1">
+            <input class=" col s3 " type="number" name="battVolt1" placeholder="Battery Voltage" id="battVolt1">
+            <input class="col s4 offset-s1" type="number" name="battAmps1" placeholder="Battery Amps" id="battAmps1">
+            <input class="col s3 offset-s1" type="number" name="battQuantity1" value="1" placeholder="Qty"
+              id="battQuantity1">
+            <br><br>
+            <span class="col s12">Connection</span>
+            <br>
+            <div class="container col s12" id="connectionType">
+              <select class="col s6 offset-s3 browser-default" id="battConnection1">
+                <option class="col s6 selected" value="1">Series</option>
+                <option class="col s6" value="2">Parallel</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col s12">
+          <button class="btn-large red darken-1" id="battRemoveButton"><i class="material-icons">remove</i></button>
+          <input type="submit" class="btn-large modal-trigger" href="#modal1" name="submit" id="battSubmit">
+          <button class="btn-large" id="battAddButton"><i class="material-icons">add</i></button>
+        </div>
+
+      </div>
+
+
+      <div>
+        <h1>Load</h1>
+        <div id="loadInput">
+          <div>
+            <div class="col s12">Wattage Rating (W)</div>
+          </div>
+          <di id="div1">
+            <h6 class=" col s3"> Load 1</h6>
+            <input class=" col s5 offset-s1" type="number" name="loadWatt1" placeholder="Load in Watts" id="loadWatt1">
+            <input class="col s2 offset-s1" type="number" name="loadQuantity" value="1" placeholder="Qty"
+              id="loadQuantity1">
+        </div>
+        <div class="container">
+          <button class="btn-large red darken-1" id="loadRemoveButton"><i class="material-icons">remove</i></button>
+          <input type="submit" class="btn-large modal-trigger" href="#modal1" name="submit" id="submitLoad">
+          <button class="btn-large" id="loadAddButton" href="#modal1"><i class="material-icons">add</i></button>
+        </div>
+      </div>
+
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+        </div>
+      </div>
+
+    </form>
+
+
+    <div class="fixed-action-btn modal-trigger" href="#modal1" id="totalSummary">
+      <a class="btn-floating btn-large pulse #26a69a">
+        <i class="large material-icons">mode_edit</i>
+      </a>
+    </div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="brown-text text-lighten-3" href="#">Dammykeys04</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/function.js"></script>
+
+</body>
+
+</html>
