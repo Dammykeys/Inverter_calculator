@@ -4,7 +4,7 @@
     "id": "/",
     "start_url": "index.html",
     "orientation": "portrait-primary",
-    "description": "Payment Platform",
+    "description": "Inverter Calculator",
     "background_color": "#cfd8dc",
     "theme_color": "#ffffff",
     "display": "standalone",
