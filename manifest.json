@@ -1,10 +1,10 @@
 {
-    "name": "Dammykeys04",
-    "short_name": "Dammykeys",
+    "name": "Inverter Calculator",
+    "short_name": "Inverter Calc",
     "id": "/",
     "start_url": "index.html",
     "orientation": "portrait-primary",
-    "description": "Inverter Calculator",
+    "description": "Inverter Calculator helps make some complex inverter calculation by taking few parameters.",
     "background_color": "#cfd8dc",
     "theme_color": "#ffffff",
     "display": "standalone",
